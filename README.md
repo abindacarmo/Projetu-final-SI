@@ -8,3 +8,5 @@ halo uza linguagem programasaun PHP no muda nia URL mosu iha browser ne'e sai ht
 
 main file mak media.php no iha include husi menu_top.php, sidebar_txt.php no iha file template.logikalcontent mak nia logika
 iha folder modul ne'ebe mak rai modul doutor, pasiente no staff sira no atividade ne'ebe sira halo
+
+nia logika mos uza OOP, so nia query sira ne'e iha hotu iha folder include iha file class.php
