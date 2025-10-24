@@ -1,0 +1,38 @@
+RewriteEngine on
+
+RewriteRule ^login.html$ login.php [L]
+
+RewriteRule ^home.html$ media.php?modul=home [L]
+
+RewriteRule ^doutor.html$ media.php?modul=doutor&act [L]
+RewriteRule ^doutor-adddoutor.html$ media.php?modul=doutor&act=adddoutor [L]
+RewriteRule ^doutor-editdoutor-(.*)\.html$ media.php?modul=doutor&act=editdoutor&iddoc=$1 [L]
+RewriteRule ^doutor-deletedoutor-(.*)\.html$ media.php?modul=doutor&act=deletedoutor&iddoc=$1 [L]
+RewriteRule ^pasientes-(.*)\.html$ media.php?modul=pasiente&act=pasientedoc&iddoc=$1 [L]
+
+
+RewriteRule ^user.html$ media.php?modul=user&act [L]
+RewriteRule ^user-adduser.html$ media.php?modul=user&act=adduser [L]
+RewriteRule ^user-edituser-(.*)\.html$ media.php?modul=user&act=edituser&iduser=$1 [L]
+RewriteRule ^user-deleteuser-(.*)\.html$ media.php?modul=user&act=deleteuser&iduser=$1 [L]
+
+
+RewriteRule ^staff.html$ media.php?modul=staff&act [L]
+RewriteRule ^staff-addstaff.html$ media.php?modul=staff&act=addstaff [L]
+RewriteRule ^staff-editstaff-(.*)\.html$ media.php?modul=staff&act=editstaff&idasis=$1 [L]
+
+RewriteRule ^formulario.html$ media.php?modul=formulario&act=input [L]
+RewriteRule ^pasiente.html$ media.php?modul=pasiente&act [L]
+RewriteRule ^pasiente-editpasiente-(.*)\.html$ media.php?modul=pasiente&act=editpasiente&idpas=$1 [L]
+RewriteRule ^pasiente-deletepasiente-(.*)\.html$ media.php?modul=pasiente&act=deletepasiente&idpas=$1 [L]
+
+RewriteRule ^formulario_konsulta-input-(.*)\.html$ media.php?modul=formulario_konsulta&act=input&idpas=$1 [L]
+RewriteRule ^konsulta.html$ media.php?modul=konsulta&act [L]
+
+RewriteRule ^tratamento.html$ media.php?modul=tratamento&act [L]
+RewriteRule ^pasientes.html$ media.php?modul=pasientes&act [L]
+
+RewriteRule ^koko.html$ media.php?modul=koko&act [L]
+RewriteRule ^konsulta_doutor-(.*)\.html$ media.php?modul=konsulta_doutor&act=input&nukon=$1 [L]
+
+Options All -Indexes
